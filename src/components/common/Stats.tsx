@@ -19,7 +19,7 @@ export default function Stats() {
     <Box
       sx={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)',
+        gridTemplateColumns: { xs: 'repeat(2, 1fr)', md: 'repeat(4, 1fr)' },
         gap: '1px',
         background: 'rgba(123,92,245,0.18)',
         border: '1px solid rgba(123,92,245,0.18)',
@@ -34,14 +34,14 @@ export default function Stats() {
           key={s.label}
           sx={{
             background: '#111118',
-            padding: '1.5rem 1.2rem',
+            padding: { xs: '1.2rem 0.8rem', md: '1.5rem 1.2rem' },
             textAlign: 'center',
           }}
         >
           <Typography
             sx={{
               fontFamily: "'Syne', sans-serif",
-              fontSize: '2rem',
+              fontSize: { xs: '1.6rem', md: '2rem' },
               fontWeight: 800,
               color: '#7B5CF5',
               letterSpacing: '-0.03em',
@@ -53,7 +53,7 @@ export default function Stats() {
           <Typography
             sx={{
               fontFamily: "'Space Mono', monospace",
-              fontSize: '11px',
+              fontSize: { xs: '10px', md: '11px' },
               color: '#7A7890',
               mt: '4px',
               letterSpacing: '0.05em',
