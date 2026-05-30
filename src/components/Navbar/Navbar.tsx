@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AppBar, Toolbar, Typography, Box, Link, Button } from '@mui/material';
+import { AppBar, Toolbar, Typography, Box, Link } from '@mui/material';
 import { personalInfo } from '../../data/portfolioData';
 
 const navItems = [
